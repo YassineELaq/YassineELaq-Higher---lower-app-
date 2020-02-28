@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/higherbtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/testTitel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnLower"
+            android:layout_width="129dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="92dp"
+            android:text="@string/lower" />
+
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="129dp"
+            android:layout_height="51dp"
+            android:text="@string/equals" />
+
+        <Button
+            android:id="@+id/btnHigher"
+            android:layout_width="129dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="88dp"
+            android:ellipsize="start"
+            android:maxLength="16"
+            android:text="@string/higher" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivdice1"
+        android:layout_width="164dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="152dp"
+        android:contentDescription="@string/dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testTitel"
+        app:srcCompat="@drawable/dice1" />
+
+    <TextView
+        android:id="@+id/tvLastThrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="160dp"
+        android:text="@string/last_throw"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
